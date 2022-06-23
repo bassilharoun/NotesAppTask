@@ -1,4 +1,4 @@
-package com.apps.yourspacekotlin
+package com.apps.yourspacekotlin.NotesApp.ui
 
 import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
@@ -14,7 +14,7 @@ class SplashScreen : AppCompatActivity() {
         setContentView(binding.root)
         supportActionBar?.hide()
         Handler().postDelayed({
-            val intent = Intent(this,LoginActivity::class.java)
+            val intent = Intent(this, LoginActivity::class.java)
             startActivity(intent)
             finish()
         },5000)

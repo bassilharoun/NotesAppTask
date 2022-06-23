@@ -9,6 +9,8 @@
         <entry key="..\:/YourSpaceKotlin/app/src/main/res/layout/activity_notes_list.xml" value="0.25" />
         <entry key="..\:/YourSpaceKotlin/app/src/main/res/layout/activity_registration.xml" value="0.25" />
         <entry key="..\:/YourSpaceKotlin/app/src/main/res/layout/activity_splash_screen.xml" value="0.25" />
+        <entry key="..\:/YourSpaceKotlin/app/src/main/res/layout/dialog_add_note.xml" value="0.18072916666666666" />
+        <entry key="..\:/YourSpaceKotlin/app/src/main/res/layout/item_note.xml" value="0.22447916666666667" />
         <entry key="..\:/YourSpaceKotlin/app/src/main/res/layout/item_todo.xml" value="0.25" />
       </map>
     </option>

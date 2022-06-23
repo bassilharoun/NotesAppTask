@@ -1,7 +1,8 @@
-package com.apps.yourspacekotlin
+package com.apps.yourspacekotlin.NotesApp.ui
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import com.apps.yourspacekotlin.R
 
 class MainActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {

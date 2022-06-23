@@ -1,13 +1,13 @@
-package com.apps.yourspacekotlin.NotesApp.utils
+package com.apps.yourspacekotlin.NotesApp.ui.utils
 
 import android.view.LayoutInflater
 import android.view.ViewGroup
 import androidx.recyclerview.widget.RecyclerView
 import com.apps.yourspacekotlin.NotesApp.model.Note
-import com.apps.yourspacekotlin.databinding.ActivityNotesListBinding
+import com.apps.yourspacekotlin.NotesApp.ui.NotesViewModel
 import com.apps.yourspacekotlin.databinding.ItemNoteBinding
 
-class NotesAdapter(var notes:List<Note>) : RecyclerView.Adapter<NotesAdapter.NoteViewHolder>(){
+class NotesAdapter(var notes:List<Note>,private val viewModel: NotesViewModel) : RecyclerView.Adapter<NotesAdapter.NoteViewHolder>(){
 
     inner class NoteViewHolder(val binding: ItemNoteBinding) : RecyclerView.ViewHolder(binding.root)
 
@@ -16,8 +16,10 @@ class NotesAdapter(var notes:List<Note>) : RecyclerView.Adapter<NotesAdapter.Not
     }
 
     override fun onBindViewHolder(holder: NoteViewHolder, position: Int) {
-        holder.binding.apply {
-            tvNote.text = notes[position].title
+        var currentNote = notes[position]
+        holder.binding.tvNote.text = currentNote.title
+        holder.binding.ivDelete.setOnClickListener {
+            viewModel.delete(currentNote)
         }
     }
 

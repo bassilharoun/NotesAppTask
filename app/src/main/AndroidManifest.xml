@@ -10,19 +10,19 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.YourSpaceKotlin">
         <activity
-            android:name=".NotesApp.NotesListActivity"
+            android:name=".NotesApp.ui.NotesListActivity"
             android:exported="false" />
         <activity
-            android:name=".RegistrationActivity"
+            android:name=".NotesApp.ui.RegistrationActivity"
             android:exported="false" />
         <activity
-            android:name=".LoginActivity"
+            android:name=".NotesApp.ui.LoginActivity"
             android:exported="false" />
         <activity
-            android:name=".MainActivity"
+            android:name=".NotesApp.ui.MainActivity"
             android:exported="false" />
         <activity
-            android:name=".SplashScreen"
+            android:name=".NotesApp.ui.SplashScreen"
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />

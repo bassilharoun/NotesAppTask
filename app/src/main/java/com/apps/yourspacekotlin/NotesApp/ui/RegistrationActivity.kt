@@ -1,4 +1,4 @@
-package com.apps.yourspacekotlin
+package com.apps.yourspacekotlin.NotesApp.ui
 
 import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
@@ -13,12 +13,12 @@ class RegistrationActivity : AppCompatActivity() {
         setContentView(binding.root)
         supportActionBar?.hide()
         binding.btnSignup.setOnClickListener {
-            val intent = Intent(this,MainActivity::class.java)
+            val intent = Intent(this, MainActivity::class.java)
             startActivity(intent)
             finish()
         }
         binding.textView2.setOnClickListener {
-            val intent = Intent(this,LoginActivity::class.java)
+            val intent = Intent(this, LoginActivity::class.java)
             startActivity(intent)
         }
     }
